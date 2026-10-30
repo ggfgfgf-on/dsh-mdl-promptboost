@@ -1,0 +1,10 @@
+# Bundle patch for @deepseek-ai/dsh-mdl-promptboost.
+# Inserts the host-plane execution-intensity prompt row. Toggleable from the
+# plugin manager page (启用/停用) or at runtime via /dsh-boost on|off.
+- insert:
+    - id: mdl-promptboost
+      name: '@deepseek-ai/dsh-mdl-promptboost'
+      config:
+        enabled: true
+        # prompt: 自定义整段提示文本（删掉这行 = 用插件内置核心）
+        # extraText: 追加在内置核心之后的一句话
